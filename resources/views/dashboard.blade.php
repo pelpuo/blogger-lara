@@ -2,7 +2,7 @@
 @extends('layouts.nav')
 
 @section('content')
-    <div class="lg:w-4/5 md:px-16 md:py-8 p-4">
+    <div class="lg:w-4/5 md:px-16 md:py-8 p-4 min-h-screen">
  <div class="flex justify-between items-center mt-8">
     <h1 class="m-4 text-3xl">
         Welcome, {{$user->name}}
