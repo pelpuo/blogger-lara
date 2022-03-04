@@ -9,7 +9,7 @@
     </h1>
      {{-- Posts --}}
      {{-- <div class=""> --}}
-        <a href="posts/create" class="sm:p-3 p:3 sm:m-2  bg-teal-500 text-white">Create Post</a>
+        <a href="posts/create" class="sm:p-3 p:3 sm:m-2  bg-teal-500 hover:bg-teal-700 text-white">Create Post</a>
      {{-- </div> --}}
  </div>
 
@@ -24,12 +24,12 @@
                                 background-position:center; background-size:cover; background-repeat:no-repeat">
                                 
                             <span>
-                                <a class="my-4 mx-2 bg-blue-300 py-2 px-4 text-white" href="/posts/{{ $post->id }}/edit">Edit</a>
+                                <a class="my-4 mx-2 bg-blue-300 hover:bg-blue-500 py-2 px-4 text-white" href="/posts/{{ $post->id }}/edit">Edit</a>
                             </span>
                             
                             {!!Form::open(['action' => ['App\Http\Controllers\PostController@destroy', $post->id], 'method' => 'POST', 'class' => 'inline'])!!}
                             {{Form::hidden('_method', 'DELETE')}}
-                            {{Form::submit('Delete', ['class' => 'my-4 mx-2 p-2 bg-red-500 text-white'])}}
+                            {{Form::submit('Delete', ['class' => 'my-4 mx-2 p-2 bg-red-500  hover:bg-red-700 text-white'])}}
                         {!!Form::close()!!}    
                             </div>
                             <div class="flex flex-col justify-between content-between">

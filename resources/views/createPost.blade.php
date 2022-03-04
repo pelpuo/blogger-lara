@@ -25,7 +25,7 @@
         <div class="flex items-center justify-start">
 
           {{Form::hidden('_method','POST')}}
-          {{Form::submit('Save Changes', ['class'=>'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'])}}
+          {{Form::submit('Save Changes', ['class'=>'bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline'])}}
 
         </div>
       {!! Form::close() !!}
