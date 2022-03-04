@@ -39,7 +39,7 @@
                                 </div>
                             @endforeach
                         @else
-                            <h3>No posts to display</h3>
+                            <h3 class="col-span-12" >No posts to display</h3>
                         @endif
         
                     </div>
